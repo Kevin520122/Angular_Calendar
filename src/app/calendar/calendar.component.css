@@ -1,0 +1,47 @@
+.nav-bar{
+    display: flex
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .dates {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .date {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    flex-basis: calc(100% / 7);
+    padding: 5px;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .date:hover {
+    background-color: navajowhite;
+    cursor: pointer;
+  }
+  
+  li.days {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: calc(100% / 7);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  p{
+    font-size: 36px;
+    font-weight: bold
+  }
+  

@@ -1,0 +1,17 @@
+<h1>Calendar</h1>
+<div class="row">
+    <div class="col-md-12">
+        <div class="mb-3 nav-bar">
+            
+                <button class="btn btn-primary" (click)="prevMonth()">&lt;</button>&nbsp;
+                <p>{{curDate | date: "MMMM, YYYY"}}</p>
+                &nbsp;<button class="btn btn-primary" (click)="nextMonth()">&gt;</button>
+        </div>
+    </div>
+    
+</div>
+
+<ul class="dates"> 
+    <li class="days" *ngFor="let day of days">{{day}}</li>
+    <li class ="date" *ngFor = "let date of MonthInfo"><h1>{{date.curDate}}</h1></li>
+</ul>
